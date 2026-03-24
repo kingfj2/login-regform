@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="scene">
+        <div class="sun-moon"></div>
+        <div class="mountains">
+            <div class="mountain mountain-far"></div>
+            <div class="mountain mountain-mid"></div>
+            <div class="mountain mountain-near"></div>
+        </div>
+        <div class="trees"></div>
+        <div class="birds">
+            <span>🕊</span>
+            <span>🕊</span>
+            <span>🕊</span>
+        </div>
+    </div>
+
+    <header class="top-nav">
+        <nav>
+            <a href="#" class="nav-link">HOME</a>
+            <a href="#" class="nav-link">ABOUT</a>
+            <a href="#" class="nav-link">SERVICE</a>
+            <a href="#" class="nav-link">CONTACT</a>
+            <a href="#" class="nav-link login-button">LOGIN</a>
+        </nav>
+    </header>
+
+    <main class="card">
+        <div class="login-panel">
+            <h1>LOGIN</h1>
+            <form id="loginForm">
+                <div class="field-group">
+                    <label for="email">Email</label>
+                    <div class="input-icon-wrapper">
+                        <span class="icon">✉</span>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <label for="password">Password</label>
+                    <div class="input-icon-wrapper">
+                        <span class="icon">👁</span>
+                        <input type="password" id="password" name="password" placeholder="Enter password" required>
+                        <button type="button" id="togglePassword" aria-label="Show password">👁️</button>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label class="remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        Remember Me
+                    </label>
+                    <a href="#" class="forgot">Forgot Password?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <div id="message" class="message"></div>
+
+                <p class="signup-line">
+                    Don't have an Account? <a href="registration.html">Register</a>
+                </p>
+            </form>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

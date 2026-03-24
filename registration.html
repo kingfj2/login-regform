@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="registration-page">
+    <div class="scene">
+        <div class="sun-moon"></div>
+        <div class="mountains">
+            <div class="mountain mountain-far"></div>
+            <div class="mountain mountain-mid"></div>
+            <div class="mountain mountain-near"></div>
+        </div>
+        <div class="trees"></div>
+        <div class="birds">
+            <span>🕊</span>
+            <span>🕊</span>
+            <span>🕊</span>
+        </div>
+    </div>
+
+    <div class="modal-overlay">
+        <div class="registration-modal">
+            <div class="modal-header">
+                <div class="header-content">
+                    <span class="dot">•</span>
+                    <h1>Registration Form</h1>
+                    <span class="dot">•</span>
+                </div>
+                <button class="close-btn" onclick="window.location.href='index.html'">✕</button>
+            </div>
+
+            <form id="registrationForm" class="registration-form">
+                <div class="form-field">
+                    <input type="text" id="name" name="name" placeholder=" " required>
+                    <label for="name">Name <span class="required">*</span></label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-field">
+                    <input type="email" id="email" name="email" placeholder=" " required>
+                    <label for="email">Email address <span class="required">*</span></label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-field">
+                    <input type="text" id="country" name="country" placeholder=" " required>
+                    <label for="country">Country <span class="required">*</span></label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-field">
+                    <input type="tel" id="phone" name="phone" placeholder=" " required>
+                    <label for="phone">Phone <span class="required">*</span></label>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="form-field password-field">
+                    <input type="password" id="password" name="password" placeholder=" " required>
+                    <label for="password">Password <span class="required">*</span></label>
+                    <button type="button" class="toggle-password" id="togglePin">👁</button>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms" class="terms-label">I agree with Terms and Conditions, and confirm I have read the Privacy Policy</label>
+                </div>
+
+                <button type="submit" class="create-account-btn">CREATE ACCOUNT</button>
+
+                <div id="message" class="message"></div>
+
+                <div class="signin-footer">
+                    Already have an account? <a href="index.html" class="signin-link">Sign in</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
